@@ -17,6 +17,8 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
     background-image: radial-gradient(circle, #291467 0%, #0B0127 100%);
+    width: 100vw;
+    height: 100vh;
 }
 
 .background-img {
