@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-image: radial-gradient(circle, #291467 0%, #0B0127 100%);
+}
+
+.background-img img {
+    position: absolute;
+}
+
+.house {
+    height: 85%;
+    right: 0;
+    bottom: 0;
+}
+
+.hanging {
+    width: 10%;
+    top: 0;
+    left: 40%;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+
+}
+
+.grave {
+    height: 8%;
+    bottom: 0px;
+    left: 30%;
+}
+
+.cementery {
+    bottom: -10px;
+    left: 25%;
+}
+
+.scarecrow {
+    height: 15%;
+    bottom: -10px;
+    left: 1%;
+    transform: rotate(-10deg);
+}
+
+.bats {
+    height: 20%;
+    top: 15%;
+    left: 60%;
+}
+
+.witch {
+    height: 20%;
+    top: 55%;
+    left: 45%;
+}
+
+.ghost {
+    height: 10%;
+    bottom: 10px;
+    left: 50%;
+    animation: ghost-move 10s infinite;
+}
+
+@keyframes ghost-move {
+    0% {
+        left: 50%;
+    }
+
+    49% {
+        left: 25%;
+        transform: scaleX(1);
+    }
+
+    51% {
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: 50%;
+        transform: scaleX(-1);
+    }
+}
+
+.glow {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    box-shadow: 1000px 0px 400px 0px #ffe469;
+    top: 50%;
+    left: 0%;
+}
+
+
+/* For Navbar */
+.navbar {
+    display: flex;
+    margin: 10px 50px;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo p {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+}
+
+.navItems {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navItems li {
+    list-style: none;
+    margin: 15px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.navItems li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navItems li:hover {
+    background-color: #ED504E;
+}
+
+
+/* For Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* margin: 70px 100px; */
+    /* margin: 70px 6vw; */
+    margin: 6vh 6vw;
+}
+
+.hero .heading1 {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.hero .bigtext {
+    font-family: 'Fredoka One', cursive;
+    font-size: 5vw;
+}
+
+.orange {
+    color: #F97E48;
+}
+
+.subtext {
+    margin: 20px 0;
+    font-size: 14px;
+    /* font-size: 1em; */
+    width: 35vw;
+}
+
+.buttons button {
+    width: 13%;
+    margin-right: 20px;
+    padding: 15px 25px;
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons .btn1 {
+    border-width: 0;
+    background-color: #ED504E;
+}
+
+.buttons .btn1:hover {
+    box-shadow: 0 5px 15px #ED504E;
+}
+
+.buttons .btn2 {
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+.buttons .btn2:hover {
+    background-color: transparent;
+    box-shadow: 0 5px 15px white;
+}
+
+.hero .date {
+    margin: 15px 5px;
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin: 0 100px;
+    padding: 25px 0;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    margin: 0 10px;
+}
+
+.links a i {
+    color: white;
+    font-size: 25px;
+}
