@@ -21,93 +21,9 @@ body {
     height: 100vh;
 }
 
-.background-img {
-    overflow: hidden;
-}
 
 .background-img img {
     position: absolute;
-}
-
-.house {
-    height: 85%;
-    right: 0;
-    bottom: 0;
-}
-
-.hanging {
-    width: 10%;
-    top: 0;
-    left: 40%;
-    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
-}
-
-.grave {
-    height: 8%;
-    bottom: 0px;
-    left: 30%;
-}
-
-.cementery {
-    bottom: -10px;
-    left: 25%;
-    height: 30%;
-}
-
-.scarecrow {
-    height: 15%;
-    bottom: -10px;
-    left: 1%;
-    transform: rotate(-10deg);
-}
-
-.bats {
-    height: 20%;
-    top: 15%;
-    left: 60%;
-}
-
-.witch {
-    height: 20%;
-    top: 55%;
-    left: 50%;
-}
-
-.ghost {
-    height: 10%;
-    bottom: 10px;
-    left: 50%;
-    animation: ghost-move 10s infinite;
-}
-
-@keyframes ghost-move {
-    0% {
-        left: 50%;
-    }
-
-    49% {
-        left: 25%;
-        transform: scaleX(1);
-    }
-
-    51% {
-        transform: scaleX(-1);
-    }
-
-    100% {
-        left: 50%;
-        transform: scaleX(-1);
-    }
-}
-
-.glow {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    background-color: transparent;
-    box-shadow: 1000px 0px 400px 0px #ffe469;
-    top: 50%;
-    left: 0%;
 }
 
 
@@ -121,8 +37,6 @@ body {
 
 .logo {
     display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     cursor: pointer;
@@ -182,7 +96,7 @@ body {
 
 .subtext {
     margin: 20px 0;
-    font-size: 14px;
+    font-size: 15px;
     width: 35vw;
 }
 
@@ -226,19 +140,18 @@ body {
     font-size: 20px;
 }
 
+
+/* For Footer */
 .footer {
     position: absolute;
     bottom: 0;
-    margin: 0 100px;
+    margin: 0 150px;
     padding: 25px 0;
 }
 
 .links {
     display: flex;
-}
-
-.links a {
-    margin: 0 10px;
+    gap: 20px;
 }
 
 .links a i {
@@ -246,37 +159,117 @@ body {
     font-size: 25px;
 }
 
+.links a i:hover {
+    color: #F97E48;
+}
 
+/* For Image Locations */
+.house {
+    height: 85%;
+    right: 0;
+    bottom: 0;
+}
 
-@media screen and (max-width: 1130px) {
-    .buttons button {
-        font-size: 12px;
+.hanging {
+    width: 10%;
+    top: 0;
+    left: 40%;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+
+.grave {
+    height: 8%;
+    bottom: 0px;
+    left: 30%;
+}
+
+.cementery {
+    bottom: -10px;
+    left: 25%;
+    height: 30%;
+}
+
+.scarecrow {
+    height: 15%;
+    bottom: -10px;
+    left: 1%;
+    transform: rotate(-10deg);
+}
+
+.bats {
+    height: 20%;
+    top: 15%;
+    left: 60%;
+}
+
+.witch {
+    height: 20%;
+    top: 55%;
+    left: 50%;
+}
+
+.ghost {
+    height: 10%;
+    bottom: 10px;
+    left: 50%;
+    animation: ghost-move 10s infinite;
+}
+
+/* Animation for Ghost movement */
+@keyframes ghost-move {
+    0% {
+        left: 50%;
     }
 
+    49% {
+        left: 25%;
+        transform: scaleX(1);
+    }
+
+    51% {
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: 50%;
+        transform: scaleX(-1);
+    }
+}
+
+
+/* For Responsiveness */
+@media screen and (max-width: 1130px) {
     .navItems li a {
         font-size: 15px;
+    }
+
+    .buttons button {
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 956px) {
+    .subtext {
+        font-size: 14px;
+    }
+
     .buttons button {
+        width: 15vw;
         padding: 0.75rem 0.5rem;
+    }
+
+    .footer {
+        margin-left: 100px;
     }
 
     .house {
         height: 75%;
-        right: 0;
-        bottom: 0;
     }
 
     .cementery,
     .grave,
     .navItems {
         display: none;
-    }
-
-    .buttons button {
-        width: 15vw;
     }
 
     @keyframes ghost-move {
@@ -301,8 +294,17 @@ body {
 }
 
 @media screen and (max-width: 720px) {
+    .hero .heading1 {
+        font-size: 15px;
+    }
+
     .subtext {
         font-size: 12px;
+    }
+
+    .footer {
+        bottom: 4vh;
+        margin-left: 80px;
     }
 
     .house {
@@ -317,30 +319,9 @@ body {
     .bats {
         top: 25%;
     }
-
-    .hero .heading1 {
-        font-size: 15px;
-    }
-
-    .footer {
-        bottom: 8vh;
-    }
 }
 
-
 @media screen and (max-width: 560px) {
-    .house {
-        display: none;
-    }
-
-    .buttons button {
-        width: 20vw;
-    }
-
-    .subtext {
-        width: 70vw;
-    }
-
     .navbar {
         padding: 1.25rem;
     }
@@ -361,6 +342,22 @@ body {
         font-size: 10vw;
     }
 
+    .subtext {
+        width: 70vw;
+    }
+
+    .buttons button {
+        width: 20vw;
+    }
+
+    .footer {
+        bottom: 8vh;
+    }
+
+    .house {
+        display: none;
+    }
+
     .bats {
         top: 20%;
         left: 65%;
@@ -379,8 +376,6 @@ body {
     }
 
     .witch {
-        top: 65%;
         height: 15%;
     }
-
 }

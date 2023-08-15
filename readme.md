@@ -2,6 +2,11 @@
 
 Welcome to the **Halloween Party** project! This single-page website is designed to exhibit a range of skills, including responsive design, animations, and web development techniques. Dive into the spooky atmosphere of Halloween with this interactive and engaging page.
 
+## Preview
+
+[![Halloween Party](https://drive.google.com/uc?id=1riwmo_qr6Klj-1fMcGHet-9Etvlk-MIl)](https://halloween-website-by-vineet.netlify.app/)
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
