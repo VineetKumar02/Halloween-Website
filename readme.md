@@ -30,13 +30,13 @@ To access the project, you have two options:
 
    If you have Git installed, you can clone the repository using the following command:
     
-    ```bash
+    ```cmd
     git clone https://github.com/your-username/halloween-party.git
     ```
 
    After cloning, navigate to the project directory:
 
-   ```bash
+   ```cmd
    cd halloween-party
    ```
 
@@ -67,5 +67,4 @@ To access the project, you have two options:
 Contributions to this project are welcome! Feel free to open issues and submit pull requests for any enhancements or fixes.
 
 ---
-
 **Note:** This project is for educational and demonstration purposes. All images used in this project are for illustrative purposes only and may be subject to copyright restrictions.
