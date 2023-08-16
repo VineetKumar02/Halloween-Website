@@ -271,6 +271,9 @@ body {
     .navItems {
         display: none;
     }
+    .ghost {
+        animation: ghost-move 6s infinite;
+    }
 
     @keyframes ghost-move {
         0% {
@@ -278,7 +281,7 @@ body {
         }
 
         49% {
-            left: 50%;
+            left: 35%;
             transform: scaleX(1);
         }
 
