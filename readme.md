@@ -35,14 +35,14 @@ To access the project, you have two options:
 
    If you have Git installed, you can clone the repository using the following command:
     
-    ```cmd
-    git clone https://github.com/your-username/halloween-party.git
+    ```bash
+    git clone https://github.com/VineetKumar02/Halloween-Website.git
     ```
 
    After cloning, navigate to the project directory:
 
    ```cmd
-   cd halloween-party
+   cd Halloween-Website
    ```
 
 2. **Download ZIP:**
